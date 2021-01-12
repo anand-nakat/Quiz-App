@@ -67,7 +67,6 @@ const AppProvider = ({ children }) => {
   };
 
   const handleChange = (e) => {
-    console.log(`${e.target.name}: ${e.target.value}`);
     dispatch({
       type: "SETUP_QUIZ",
       payload: { attr: e.target.name, value: e.target.value },

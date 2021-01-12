@@ -16,6 +16,7 @@ export const reducer = (state, action) => {
         ...state,
         waiting: action.payload.waiting,
         loading: action.payload.loading,
+        correctAnswers: 0,
       };
 
     case "SET_QUESTIONS":
